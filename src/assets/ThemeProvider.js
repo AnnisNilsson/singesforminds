@@ -31,6 +31,7 @@ const theme = createMuiTheme({
             fontWeight: 500,
         }   
     },
+    spacing: 8,
 
 });
 
