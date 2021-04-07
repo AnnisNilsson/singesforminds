@@ -1,1 +1,1 @@
-# singesforminds
+# singsforminds
