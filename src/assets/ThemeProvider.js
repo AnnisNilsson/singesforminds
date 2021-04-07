@@ -11,6 +11,19 @@ const theme = createMuiTheme({
             text: '#373636',
         },
     },
+    typography: {
+        fontFamily: [
+            'Comfortaa', cursive
+        ].join(','),
+        fontSize: '1.2rem',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1rem'
+        },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.5rem'
+        }
+    },
+
 });
 
 export default theme;
