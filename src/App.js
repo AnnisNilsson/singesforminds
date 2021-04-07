@@ -46,16 +46,19 @@ const theme = createMuiTheme({
 
 });
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: 0,
+    margin: 0,
+  }
+}))
+
 function App() {
+  const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
-    <div className="App">
-      <Typography variant="h1" color="textPrimary">Hej hej</Typography>
-      <Typography variant="h2" color="textSecondary">Hej hej igen</Typography>
+    <div className={classes.root}>
 
-      <Typography variant="subtitle1">Hemskt mycket hej</Typography>
-      <Typography variant="body">Shaya Solutions kan äta bajs</Typography>
-      <Button variant="contained" color="primary"><Typography variant="button">TIHI</Typography></Button>
     </div>
     </ThemeProvider>
   );
