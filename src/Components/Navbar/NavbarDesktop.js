@@ -7,11 +7,13 @@ const useStyles = makeStyles((theme) => ({
     },
     logo : {
         marginLeft: theme.spacing(1),
-        marginRight: 'auto'
+        marginRight: 'auto',
+        cursor: 'pointer'
     },
     navlinks: {
         paddingRight: theme.spacing(10),
-        paddingLeft: theme.spacing(10)
+        paddingLeft: theme.spacing(10),
+        cursor: 'pointer',
     }
 }))
 
