@@ -1,5 +1,5 @@
-import {Typography, Button, makeStyles} from '@material-ui/core';
-import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
+import {createMuiTheme, ThemeProvider, makeStyles} from '@material-ui/core/styles';
+import Btn from './Components/Button';
 
 const theme = createMuiTheme({
     palette: {
@@ -50,15 +50,37 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: 0,
     margin: 0,
+  },
+  box: {
+    backgroundColor: 'black',
+    background: 'url(https://images.unsplash.com/photo-1617759865117-e207fbda8bc9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80)',
+    backgroundSize: '50%',
+    backgroundPosition: 'top',
+    width: 300,
+    height: 300,
+    margin: theme.spacing(10),
+    '&:hover' : {
+      backgroundColor: 'red'
+    }
   }
-}))
+}));
 
 function App() {
   const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
     <div className={classes.root}>
+      <Btn 
+      text="KNAPP"
+      color="primary"
+      />
+    <Btn
+    text="KNAPP"
+    color="secondary"
+    />
+    <div className={classes.box}>
 
+    </div>
     </div>
     </ThemeProvider>
   );
