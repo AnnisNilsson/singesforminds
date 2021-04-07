@@ -1,5 +1,6 @@
 import {createMuiTheme, ThemeProvider, makeStyles} from '@material-ui/core/styles';
-import Btn from './Components/Button';
+import Btn from './Components/Btn';
+import InputField from './Components/InputField';
 
 const theme = createMuiTheme({
     palette: {
@@ -80,6 +81,8 @@ function App() {
     text="KNAPP"
     color="secondary"
     />
+
+    <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
     <div className={classes.box}>
 
     </div>
