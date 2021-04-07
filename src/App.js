@@ -1,6 +1,7 @@
 import {createMuiTheme, ThemeProvider, makeStyles} from '@material-ui/core/styles';
 import Btn from './Components/Btn';
 import InputField from './Components/InputField';
+import Navbar from './Components/Navbar/Navbar';
 
 const theme = createMuiTheme({
     palette: {
@@ -49,6 +50,7 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    paddingTop: theme.spacing(10),
     padding: 0,
     margin: 0,
   },
@@ -73,6 +75,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div className={classes.root}>
+      <Navbar />
       <Btn 
       text="KNAPP"
       color="primary"
