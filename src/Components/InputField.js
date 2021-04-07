@@ -14,6 +14,7 @@ const InputField = (props) => {
         id={props.id} 
         label={props.label || 'label'} 
         helperText={props.helperText}
+        value={props.value}
         error={props.error}
         />
     )
