@@ -15,13 +15,21 @@ const theme = createMuiTheme({
         fontFamily: [
             'Comfortaa', cursive
         ].join(','),
-        fontSize: '1.2rem',
-        [theme.breakpoints.down('sm')]: {
-            fontSize: '1rem'
+        h1: {
+            fontSize: '1.7rem',
+            fontWeight: 500,
         },
-        [theme.breakpoints.up('sm')]: {
-            fontSize: '1.5rem'
-        }
+        subtitle1: {
+            fontSize: '1.3rem',
+            fontWeight: 300,
+        },
+        body: {
+            fontSize: '1rem',
+        },
+        button: {
+            fontSize: '1.2rem',
+            fontWeight: 500,
+        }   
     },
 
 });
