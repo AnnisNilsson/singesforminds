@@ -1,6 +1,5 @@
 import React from 'react';
 import {makeStyles, Box} from '@material-ui/core';
-import { CenterFocusStrong } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) =>({
     glasContainer:{
