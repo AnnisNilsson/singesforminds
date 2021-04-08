@@ -5,6 +5,8 @@ import InputField from './Components/InputField';
 import Navbar from './Components/Navbar/Navbar';
 import CategoryDescription from './Components/CategoryDescription';
 import img from './Media/gavle.jpg';
+import StartVideoBox from './Components/StartVideoSuggestion/StartVideoBox';
+import StartVideoSuggestion from './Components/StartVideoSuggestion/StartVideoSuggestion';
 
 
 const theme = createMuiTheme({
@@ -90,10 +92,15 @@ function App() {
     />
     <GlasBackground />
     <CategoryDescription
+    backgroundColor="#9AA39C"
     img={img}
     heading="text hjälp"
     description="en bra beskrivning"
     />
+  <StartVideoSuggestion 
+  heading="rubrik"
+  description="lorem ipsum"
+  />
     <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
     <div className={classes.box}>
 

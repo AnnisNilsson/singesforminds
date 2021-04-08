@@ -1,6 +1,6 @@
 import React from 'react';
 import {makeStyles, Box, Typography} from '@material-ui/core';
-
+import { palette } from '@material-ui/system';
 const useStyles = makeStyles((theme) =>({
     descriptionContainer:{
         display:'flex',
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) =>({
         width:'80%',
         marginLeft:'auto',
         marginRight:'auto',
-        backgroundColor:'#9AA39C',
+        // backgroundColor:'#9AA39C',
 
 
     },
@@ -38,16 +38,19 @@ const CategoryDescription = (props =>{
 
     return(
         
-        <Box className={classes.descriptionContainer}>
+        <Box className={classes.descriptionContainer} 
+         bgcolor={props.backgroundColor}>
             <div className={classes.textContainer}>
                 <Typography> 
-                        <h2 className={classes.categoryHeading}>{props.heading}</h2>
+                        <h2 className={classes.categoryHeading}>
+                            {props.heading}
+                        </h2>
                         <p>{props.description}</p>
                 </Typography>
             </div>
-            <div className={classes.imgContainer}>
+            <Box className={classes.imgContainer}>
             <img src={props.img} alt={props.alt} className={classes.img}></img>
-            </div>
+            </Box>
         </Box>
     )
 })
