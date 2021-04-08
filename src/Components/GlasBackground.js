@@ -22,15 +22,15 @@ const useStyles = makeStyles((theme) =>({
     leftBorder:{
         position:'relative',
         right:8,
-        top:110,
-        height:'50%',
+        top:50,
+        height:'60%',
         borderColor:'#6A9E9E' 
     },
     rightBorder:{
         position:'relative',
         left:8,
-        bottom:180,
-        height:'70%',
+        bottom:120,
+        height:'60%',
         borderColor:'#6A9E9E'
     }
 }));
