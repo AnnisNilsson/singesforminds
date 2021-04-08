@@ -1,5 +1,6 @@
 import {createMuiTheme, ThemeProvider, makeStyles} from '@material-ui/core/styles';
 import Btn from './Components/Btn';
+import GlasBackground from './Components/GlasBackground';
 import InputField from './Components/InputField';
 import Navbar from './Components/Navbar/Navbar';
 
@@ -84,7 +85,7 @@ function App() {
     text="KNAPP"
     color="secondary"
     />
-
+    <GlasBackground />
     <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
     <div className={classes.box}>
 
