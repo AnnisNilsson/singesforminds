@@ -9,6 +9,9 @@ import StartVideoSuggestion from './Components/StartVideoSuggestion/StartVideoSu
 import ImageContainer from './Components/ImageContainer';
 import DescriptionContainer from './Components/DescriptionContainer';
 import VideoCardContainer from './Components/VideoCardContaioner';
+import CategoryBoxStart from './Components/CategoryBoxStart';
+import yoga from './Media/yoga.png'
+
 
 
 const theme = createMuiTheme({
@@ -103,15 +106,13 @@ function App() {
   heading="rubrik"
   description="lorem ipsum"
   />
-  {/* <ImageContainer 
-  height={320}
-  maxWidth={260}
-  />
-  <DescriptionContainer 
-  heading="rubrik"
-  description="text"
-  /> */}
+ 
   <VideoCardContainer />
+  <CategoryBoxStart 
+    img={yoga}
+    heading="yoga"
+    filterColor="#368A89"
+  />
     <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
     <div className={classes.box}>
 
