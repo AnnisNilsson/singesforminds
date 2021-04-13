@@ -37,13 +37,13 @@ const StartVideoBox = (props) =>{
         <Box className={classes.videoStartSection} 
         width={props.width} 
         height={props.height}>
-            <img src={img} 
+            <img src={props.img} 
             alt={props.alt} 
             className={classes.imgContainerVideo} ></img>
             <Box className={classes.textBox}>
                 <Typography>
-                    <h3>text</h3>
-                    <p>text</p>
+                    <h3>{props.heading}</h3>
+                    <p>{props.description}</p>
                 </Typography>
             </Box>
         </Box>

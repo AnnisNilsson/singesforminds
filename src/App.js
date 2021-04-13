@@ -5,8 +5,10 @@ import InputField from './Components/InputField';
 import Navbar from './Components/Navbar/Navbar';
 import CategoryDescription from './Components/CategoryDescription';
 import img from './Media/gavle.jpg';
-import StartVideoBox from './Components/StartVideoSuggestion/StartVideoBox';
 import StartVideoSuggestion from './Components/StartVideoSuggestion/StartVideoSuggestion';
+import ImageContainer from './Components/ImageContainer';
+import DescriptionContainer from './Components/DescriptionContainer';
+import VideoCardContainer from './Components/VideoCardContaioner';
 
 
 const theme = createMuiTheme({
@@ -101,6 +103,15 @@ function App() {
   heading="rubrik"
   description="lorem ipsum"
   />
+  {/* <ImageContainer 
+  height={320}
+  maxWidth={260}
+  />
+  <DescriptionContainer 
+  heading="rubrik"
+  description="text"
+  /> */}
+  <VideoCardContainer />
     <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
     <div className={classes.box}>
 
