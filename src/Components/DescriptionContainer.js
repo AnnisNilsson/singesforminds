@@ -2,10 +2,11 @@ import React from 'react';
 import {makeStyles, Box, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) =>({
-    img:{
-        objectFit:'contain',
-        width:'100%',
-        
+    textContainer:{
+        textAlign:"center"
+    },
+    container:{
+        padding:'0 10px 10px 10px'
     }
 
 }))
@@ -13,12 +14,13 @@ const useStyles = makeStyles((theme) =>({
 const DescriptionContainer = (props) =>{
     const classes = useStyles();
     return(
-            <Box height={props.height} maxWidth={props.maxWidth}>
-                <Typography>
-                    <h3>test</h3>
-                    <p>test</p>
+         <Box height={props.height} maxWidth={props.maxWidth} className={classes.container}> 
+                <Typography className={classes.textContainer}>
+                    <h3>{props.heading}</h3>
+                    <p>{props.description}</p>                    
                 </Typography>
-            </Box>
+                <span> play tid: 20:00 </span>
+        </Box>
     )
 
 }
