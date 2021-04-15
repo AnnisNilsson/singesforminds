@@ -1,8 +1,7 @@
 import React from 'react';
-import {makeStyles, Box, Typography} from '@material-ui/core';
+import {makeStyles, Typography} from '@material-ui/core';
 import img from '../../Media/gavle.jpg';
 import StartVideoBox from './StartVideoBox';
-import { positions } from '@material-ui/system';
 
 
 const useStyles = makeStyles((theme) =>({
@@ -11,7 +10,10 @@ const useStyles = makeStyles((theme) =>({
         justifyContent:'flex-end'
     },
     textContainer:{
-     margin:'auto'   
+     margin:'auto' ,
+     [theme.breakpoints.down('sm')]: {
+        display:'none'
+    }  
     },
     heading:{
         textTransform:"upperCase",
@@ -35,16 +37,16 @@ const StartVideoSuggestion = (props) =>{
         <div className={classes.containerSuggestion}>
             <div>
                 <StartVideoBox 
-                width={170}
-                height={200}
+                width={"30vw"}
+                height={"30vh"}
                 heading="text 1"
                 description="lorem ipsum dolores"
                 img={img}
                 />
                
                 <StartVideoBox 
-                width={170}
-                height={200}
+                width={"30vw"}
+                height={"30vh"}
                 heading="test 2"
                 description="lorem ipsum dolores"
                 img={img}
@@ -54,8 +56,8 @@ const StartVideoSuggestion = (props) =>{
             </div>
             <div>
                 <StartVideoBox 
-                width={340}
-                height={440}
+                width={"40vw"}
+                height={"65vh"}
                 heading="text 3"
                 description="lorem ipsum dolores"
                 img={img}

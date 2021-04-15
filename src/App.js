@@ -12,6 +12,7 @@ import VideoCardContainer from './Components/VideoCardContaioner';
 import CategoryBoxStart from './Components/CategoryBoxStart';
 import yoga from './Media/yoga.png'
 import SettingsMenu from './Components/SettingsMenu';
+import SettingsInfo from './Components/SettingsInfo';
 
 
 
@@ -115,6 +116,7 @@ function App() {
     filterColor="#368A89"
   />
   <SettingsMenu />
+  <SettingsInfo />
     <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
     <div className={classes.box}>
 

@@ -24,7 +24,6 @@ margin:'auto',
 textAlign:'center',
 opacity: 0.9,
 boxShadow: '10px 14px 24px rgba(0, 0, 0, 0.25);'
-
 }
 }));
 

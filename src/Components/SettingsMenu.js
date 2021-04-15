@@ -4,7 +4,10 @@ import gear from '../Media/Icon/gear.png'
 
 const useStyles = makeStyles((theme) =>({
     container:{
-        boxShadow:"20px 14px 33px rgba(0, 0, 0, 0.25);"
+        boxShadow:"20px 14px 33px rgba(0, 0, 0, 0.25);",
+        [theme.breakpoints.down('sm')]: {
+            width:'90vw'
+     }
     },
     img:{
         width:80,
