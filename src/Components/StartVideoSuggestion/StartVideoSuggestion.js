@@ -50,8 +50,6 @@ const StartVideoSuggestion = (props) =>{
                 heading="test 2"
                 description="lorem ipsum dolores"
                 img={img}
-
-
                 />
             </div>
             <div>

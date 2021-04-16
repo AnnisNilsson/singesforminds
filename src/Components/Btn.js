@@ -14,7 +14,7 @@ const Btn = (props) => {
 <Button variant="contained" color={props.color} size="medium" className={classes.btn}>
     <Typography variant="button">
         {props.text}
-        </Typography>
+    </Typography>
 </Button>
     )
 }

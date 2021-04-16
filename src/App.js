@@ -13,6 +13,7 @@ import CategoryBoxStart from './Components/CategoryBoxStart';
 import yoga from './Media/yoga.png'
 import SettingsMenu from './Components/SettingsMenu';
 import SettingsInfo from './Components/SettingsInfo';
+import Header from './Components/Header';
 
 
 
@@ -118,6 +119,7 @@ function App() {
   <SettingsMenu />
   <SettingsInfo />
     <InputField id="testInput" label="Testinput" helperText="hjälp!" error={false}/>
+  <Header />
     <div className={classes.box}>
 
     </div>
